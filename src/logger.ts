@@ -1,5 +1,6 @@
 export function debugLog(...args: any[]) {
-    if (process.env.DEBUG !== "sentence-splitter") {
+    // @ts-ignore
+    if (typeof process !== "undefined" && process.env.DEBUG !== "sentence-splitter") {
         return;
     }
     console.log("sentence-splitter: ", ...args);
