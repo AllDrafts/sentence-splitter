@@ -41,7 +41,8 @@
     "precommit": "lint-staged",
     "postcommit": "git reset",
     "dev": "vite",
-    "site:build": "vite build"
+    "site:build": "vite build",
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css}": [
